@@ -1,6 +1,6 @@
 # logic trainer
 
-Logic Trainer is a local-first PHIL-P 250 practice application for truth-functional logic (TFL), first-order logic (FOL), truth tables, Fitch proofs, and finite models. It is a static React application: the browser loads a compiled JavaScript bundle and performs every parse, evaluation, grade, and persistence operation locally.
+Local-first PHIL-P 250 practice application for truth-functional logic (TFL), first-order logic (FOL), truth tables, Fitch proofs, and finite models. It is a static React application: the browser loads a compiled JavaScript bundle and performs every parse, evaluation, grade, and persistence operation locally.
 
 **Live application:** [taherezm.github.io/phil250-logic-trainer](https://taherezm.github.io/phil250-logic-trainer/)
 
