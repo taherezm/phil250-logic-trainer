@@ -1,4 +1,4 @@
-# Logic Trainer
+# logic trainer
 
 A local-first symbolic logic practice application for PHIL-P 250. The interface is organized by topic rather than course week, and every topic is available immediately.
 
