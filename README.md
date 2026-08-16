@@ -2,6 +2,10 @@
 
 A local-first symbolic logic practice application for PHIL-P 250. The interface is organized by topic rather than course week, and every topic is available immediately.
 
+## Practice online
+
+Open the live app at **[taherezm.github.io/phil250-logic-trainer](https://taherezm.github.io/phil250-logic-trainer/)**.
+
 ## Run locally
 
 Requires Node.js 20 or newer.

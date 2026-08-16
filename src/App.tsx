@@ -7,6 +7,7 @@ import { PracticePage } from './pages/PracticePage'
 import { ProofWorkspace } from './pages/ProofWorkspace'
 import { ReviewPage } from './pages/ReviewPage'
 import { SourcesPage } from './pages/SourcesPage'
+import githubMark from './assets/github-mark.svg'
 
 type View = 'library' | 'practice' | 'proofs' | 'models' | 'review' | 'sources'
 
@@ -41,13 +42,15 @@ export default function App() {
     <div className="app-shell">
       <a className="skip-link" href="#main-content">Skip to main content</a>
       <header className="site-header">
-        <button className="wordmark" onClick={() => navigate('library')}>Logic Trainer</button>
         <nav aria-label="Primary navigation">
           <button aria-current={view === 'library' || view === 'practice' ? 'page' : undefined} onClick={() => navigate('library')}>Practice</button>
           <button aria-current={view === 'proofs' ? 'page' : undefined} onClick={() => navigate('proofs')}>Proof workspace</button>
           <button aria-current={view === 'models' ? 'page' : undefined} onClick={() => navigate('models')}>Model workspace</button>
           <button aria-current={view === 'review' ? 'page' : undefined} onClick={() => navigate('review')}>Review</button>
           <button aria-current={view === 'sources' ? 'page' : undefined} onClick={() => navigate('sources')}>Sources</button>
+          <a className="github-link" href="https://github.com/taherezm/phil250-logic-trainer" target="_blank" rel="noreferrer" aria-label="View the Logic Trainer source code on GitHub">
+            <img src={githubMark} alt="" />
+          </a>
         </nav>
       </header>
 
@@ -55,7 +58,6 @@ export default function App() {
         {view === 'library' && (
           <>
             <section className="page-heading">
-              <p className="eyebrow">PHIL-P 250 · Symbolic logic</p>
               <h1>Choose what to practice.</h1>
               <p>Every topic and rule is available. Select one subskill or combine several into a mixed set.</p>
             </section>
